@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: -apple-system, 'Inter', 'Karla', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F5F7FB;
+  font-family: -apple-system, 'Inter', 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
