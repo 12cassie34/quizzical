@@ -33,6 +33,7 @@ To be added.
 
 ### Built with
 
+- Use [vite](https://vitejs.dev/) to create the project. 
 - Semantic HTML5 markup
 - [React](https://reactjs.org/) - JS library
 - [tailwindcss](https://tailwindcss.com/) - the utility-first CSS framework
