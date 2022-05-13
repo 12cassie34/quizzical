@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Options from './Options'
 
 function Question(props) {
-    const [selectedOption, setSelectOption] = useState('');
+    const [selectedOption, setSelectOption] = useState('')
 
     const changeSelectOption = (option) => {
         setSelectOption(option)
@@ -14,7 +14,9 @@ function Question(props) {
             <Options key={option.id} 
                      text={option.text} 
                      setSelectOption={changeSelectOption}
-                     isSelected={option.text === selectedOption ? true : false} />
+                     checkingTheAnswer={props.checkingTheAnswer}
+                     isSelected={option.text === selectedOption ? true : false}
+                     isCorrect={option.isCorrect} />
         )
     })
 
