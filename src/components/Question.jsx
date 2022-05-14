@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import Options from './Options'
 
@@ -9,6 +9,20 @@ function Question(props) {
         setSelectOption(option)
     }
 
+    const [isCorrect, setIsCorrect] = useState(false)
+    const checkIfSelectACorrectOption = (isCorrectValue) => {
+        if (!isCorrectValue) {
+            setIsCorrect(false)
+        }
+        if (isCorrectValue) {
+            setIsCorrect(true)
+        }
+    }
+
+    useEffect(() => {
+        props.checkIfScore(isCorrect)
+    }, [isCorrect])
+
     const options = props.options.map(option => {
         return (
             <Options key={option.id} 
@@ -16,7 +30,8 @@ function Question(props) {
                      setSelectOption={changeSelectOption}
                      checkingTheAnswer={props.checkingTheAnswer}
                      isSelected={option.text === selectedOption ? true : false}
-                     isCorrect={option.isCorrect} />
+                     isCorrect={option.isCorrect}
+                     passIfCorrect={checkIfSelectACorrectOption} />
         )
     })
 

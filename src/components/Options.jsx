@@ -9,11 +9,17 @@ function Options(props) {
             isCorrectClass = 'border-none bg-apple-green text-dark-blue'
         } 
     }
-    console.log("isCorrectClass", isCorrectClass)
 
+    const selectOption = () => {
+        if (!props.checkingTheAnswer) {
+            props.setSelectOption(props.text)
+        }
+        props.passIfCorrect(props.isCorrect)
+        return;
+    }
 
     return (
-        <div onClick={() => props.setSelectOption(props.text)}
+        <div onClick={selectOption}
             className={`mr-3 mb-4 py-1 px-2 border border-purple-blue rounded-xl text-purple-blue cursor-pointer ease-linear duration-500 ${selectedClass} ${isCorrectClass}`}>
             {props.text}
         </div>
