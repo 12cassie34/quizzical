@@ -5,7 +5,7 @@ import Question from './/Question'
 
 import { decodeHtml, randomFormOptions } from '../utils/helperFunctions'
 
-function StartGame() {
+function StartGame(props) {
     const [questions, setQuestions] = useState([])
     const [checkingTheAnswer, setCheckingTheAnswer] = useState(false)
     const changeCheckingTheAnswer = () => {
@@ -13,6 +13,7 @@ function StartGame() {
     }
     const startNewGame = () => {
         setCheckingTheAnswer(false)
+        props.returnToWelcomePage();
     }
 
     const [score, setScore] = useState(0)
