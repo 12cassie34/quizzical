@@ -10,6 +10,7 @@ Under Construction Now
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 The exercise is from the course - Learn React for free created by Bob Ziroll from [Scriba](https://scrimba.com/).
@@ -25,6 +26,9 @@ In this exercise, I learned:
 #### `StrictMode`
 - When using `useEffect` to fetch API's data, it will call API twice. It's because I turned on the "StrictMode". It will render components twice. Fortunately, it only runs in development mode.
 - Discussion on stackoverflow: [React Hooks: useEffect() is called twice even if an empty array is used as an argument](https://stackoverflow.com/questions/60618844/react-hooks-useeffect-is-called-twice-even-if-an-empty-array-is-used-as-an-ar)
+
+#### re-render
+- When a data is updated in a JSX, React will re-render the whole JSX. It will cause some problems if we want some datum be the same, like datum we fetch from APIs. Therefore, we have to handle the data update carefully.
 
 ### Links
 - Solution URL: [tenzies-game](https://github.com/12cassie34/quizzical)
@@ -48,3 +52,6 @@ To be added.
 
 - Medium - [Cassie，來學]](https://medium.com/@cassiecoding)
 - Cake Resume - [@SHANYU LIN](https://www.cakeresume.com/me/shanyu-lin)
+
+## Acknowledgments
+- [Deploying Vite App to GitHub Pages](https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane) by Shashank sharma
