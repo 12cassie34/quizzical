@@ -31,8 +31,8 @@ In this exercise, I learned:
 - When a data is updated in a JSX, React will re-render the whole JSX. It will cause some problems if we want some datum be the same, like datum we fetch from APIs. Therefore, we have to handle the data update carefully.
 
 ### Links
-- Solution URL: [tenzies-game](https://github.com/12cassie34/quizzical)
-- Live Site URL: [Live Demo](#) - Under Construction
+- Solution URL: [Quizzical](https://github.com/12cassie34/quizzical)
+- Live Site URL: [Live Demo](https://12cassie34.github.io/quizzical/)
 - The Layout Design URL: [Quizzical App](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0%3A1)
 
 ### Screenshot
