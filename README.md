@@ -1,4 +1,4 @@
-Under Construction Now
+Demo Page [Here](https://12cassie34.github.io/quizzical/)
 
 ## Table of contents
 
@@ -36,7 +36,17 @@ In this exercise, I learned:
 - The Layout Design URL: [Quizzical App](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0%3A1)
 
 ### Screenshot
-To be added.
+![](https://i.imgur.com/jJNxplM.jpg)
+
+![](https://i.imgur.com/BuTIBr4.png)
+
+![](https://i.imgur.com/JxD0Gbe.png)
+
+![](https://i.imgur.com/464HcZh.png)
+
+![](https://i.imgur.com/zveJVp9.png)
+
+![](https://i.imgur.com/mUqHudI.png)
 
 
 ## My process
