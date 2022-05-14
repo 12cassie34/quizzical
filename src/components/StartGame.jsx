@@ -61,7 +61,7 @@ function StartGame(props) {
     }
 
     return (
-        <div className="my-8 w-full">
+        <div className="my-8 w-full sm:mx-8 lg:max-w-2xl">
             {renderQuestions}
             <div className="mt-4 flex justify-center">
                 { checkingTheAnswer 
